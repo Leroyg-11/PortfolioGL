@@ -1,0 +1,196 @@
+@import "../../index.scss";
+nav {
+  margin: 1rem;
+}
+.nav-full-screen {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  ul {
+    list-style: none;
+    align-items: baseline;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      display: flex;
+    }
+    li {
+      color: $dark-blue;
+      margin-right: 1rem;
+      i {
+        color: $dark-red;
+        padding-right: 1rem;
+      }
+    }
+  }
+  .li-item {
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: 0.6s;
+    -ms-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+
+    padding-right: 2rem;
+    color: rgba($dark-blue, 0.5);
+
+    &:hover {
+      color: $dark-blue;
+      i {
+        animation-duration: 0.8s;
+        animation-name: clignoter;
+        animation-iteration-count: infinite;
+        transition: none;
+
+        @keyframes clignoter {
+          0% {
+            opacity: 1;
+          }
+          40% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    i {
+      padding-right: 0.5rem;
+      color: $dark-red;
+    }
+  }
+}
+
+.nav-mobile {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .hidden {
+    animation: disappear 0.7s ease both;
+    // display: none;
+  }
+
+  ul {
+    list-style: none;
+    align-items: baseline;
+    display: flex;
+  }
+  .hamburger-icon {
+    color: $dark-red;
+  }
+  .hamburger-menu {
+    width: 100%;
+
+    .nav-item-mobile {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+      flex-direction: row;
+      align-content: flex-end;
+      padding: 0;
+      gap: 1rem;
+      align-items: flex-end;
+      li {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+        animation: appear 0.7s ease both;
+
+        p {
+          display: none;
+          margin: 0;
+        }
+        &:hover {
+          p {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .li-item {
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: 0.6s;
+    -ms-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+
+    padding-right: 2rem;
+    color: rgba($dark-blue, 0.5);
+
+    &:hover {
+      color: $dark-blue;
+      i {
+        animation-duration: 0.8s;
+        animation-name: clignoter;
+        animation-iteration-count: infinite;
+        transition: none;
+
+        @keyframes clignoter {
+          0% {
+            opacity: 1;
+          }
+          40% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    i {
+      color: $dark-red;
+    }
+  }
+}
+.nav-name {
+  padding: 0;
+  li {
+    color: $dark-blue;
+    margin-right: 1rem;
+  }
+  i {
+    color: $dark-red;
+    margin-right: 1rem;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none; /* Pour cacher l'élément à la fin de l'animation */
+  }
+}

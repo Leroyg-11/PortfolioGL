@@ -1,0 +1,35 @@
+@import "../index.scss";
+.div-container {
+  border: 1px solid white;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  div {
+    height: 100px;
+    width: 100px;
+    border: 10px solid transparent;
+    position: relative;
+
+    &:nth-child(1) {
+      background-color: rgb(23, 0, 128);
+    }
+    &:nth-child(2) {
+      background-color: rgb(193, 28, 28);
+    }
+
+    &:nth-child(3) {
+      width: 100%;
+      background-color: rgb(39, 193, 28);
+    }
+    p {
+      display: none;
+    }
+    &:hover {
+      p {
+        display: block;
+      }
+    }
+  }
+}

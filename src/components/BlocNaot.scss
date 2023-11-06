@@ -1,0 +1,44 @@
+@import "../index.scss";
+
+.nav-full-screen {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  // ... (le reste de votre CSS)
+
+  .li-item {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s; // Réduisez la durée de la transition
+    padding-right: 2rem;
+    color: rgba($dark-blue, 0.5);
+
+    &:hover {
+      color: $dark-blue;
+      i {
+        animation-duration: 0.5s; // Réduisez la durée de l'animation
+        animation-name: clignoter;
+        animation-iteration-count: infinite;
+        transition: none;
+
+        @keyframes clignoter {
+          0% {
+            opacity: 1;
+          }
+          40% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    i {
+      padding-right: 0.5rem;
+      color: $dark-red;
+    }
+  }
+}
