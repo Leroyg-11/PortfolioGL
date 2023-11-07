@@ -41,9 +41,23 @@ section {
   display: flex;
   // width: 80vw;
   gap: 5rem;
+  > h1 {
+    font-size: 3rem;
+    color: $dark-yellow;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: $dark-green;
+  }
 }
 .projet-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.avatar-pic {
+  width: 12rem;
+  height: 12rem;
+  object-fit: contain;
+  border-radius: 100%;
+  border: 2px solid $dark-green;
 }

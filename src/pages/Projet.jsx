@@ -31,6 +31,8 @@ const Projet = () => {
 
   return (
     <section className={`projet-container fade-in ${appear ? "show" : ""}`}>
+      <h1>PROJETS</h1>
+
       {reposWithOneStar.map((repo) => {
         const logoUrl = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Logo.png`;
 

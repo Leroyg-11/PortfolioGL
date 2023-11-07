@@ -9,6 +9,8 @@ const Contact = () => {
   }, []);
   return (
     <section>
+      <h1>CONTACT</h1>
+
       <p className={`fade-in ${appear ? "show" : ""}`}>
         Contact Contact Contact Contact Contact Contact Contact Contact Contact
         Contact Contact Contact Contact Contact Contact Contact Contact Contact

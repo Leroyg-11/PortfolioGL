@@ -49,7 +49,7 @@ const NavBar = () => {
 
             <NavLink className="nav-name" to="/projet">
               <li className="li-item">
-                <i className="fa-solid fa-folder-open"></i>Projet
+                <i className="fa-solid fa-folder-open"></i>Projets
               </li>
             </NavLink>
             <NavLink className="nav-name" to="/contact">
@@ -86,7 +86,7 @@ const NavBar = () => {
 
               <NavLink className="nav-name" to="/projet">
                 <li className="li-item">
-                  <i className="fa-solid fa-folder-open"></i>Projet
+                  <i className="fa-solid fa-folder-open"></i>Projets
                 </li>
               </NavLink>
               <NavLink className="nav-name" to="/contact">

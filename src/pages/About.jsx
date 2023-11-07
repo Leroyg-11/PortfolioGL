@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Pages.scss";
 import AboutCard from "../components/projet/ProjetCard";
+import avatar from "../assets/Avatar.jpg";
 const About = () => {
   const [appear, setAppear] = useState(false);
 
@@ -11,12 +12,20 @@ const About = () => {
 
   return (
     <section className={`fade-in ${appear ? "show" : ""}`}>
+      <img className="avatar-pic" src={avatar} alt="profil pic avatar" />
+      <h1>ABOUT</h1>
+
       <p>
+        About me : <br />
+        <br />
         About About About About About About About About About About About About
+        About About About About About About About About About About About
+      </p>
+      <p>
+        About me : <br />
+        <br />
         About About About About About About About About About About About About
-        About About About About About About About About About About About About
-        About About About About About About About About About About About About
-        About About About About About About About About About About About About{" "}
+        About About About About About About About About About About About
       </p>
     </section>
   );
