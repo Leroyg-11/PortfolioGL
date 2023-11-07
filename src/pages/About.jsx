@@ -12,7 +12,6 @@ const About = () => {
 
   return (
     <section className={`fade-in ${appear ? "show" : ""}`}>
-      <img className="avatar-pic" src={avatar} alt="profil pic avatar" />
       <h1>ABOUT</h1>
 
       <p>

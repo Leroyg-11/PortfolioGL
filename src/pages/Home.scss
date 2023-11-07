@@ -1,0 +1,53 @@
+@import "../index.scss";
+
+main {
+  max-width: 100%;
+  padding: 2rem;
+
+  border: 1px solid $dark-green;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    margin: 1rem 0;
+    font-size: 3em;
+    color: $dark-yellow;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: $dark-blue;
+  }
+  section {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    border: 1px solid $dark-blue;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    .pic {
+      display: block;
+      float: left;
+      width: 8rem;
+      height: 8rem;
+      text-indent: -9000px;
+      background-color: #118ab2;
+      border: 3px #ef476f solid;
+      margin: 0 1rem 0.5rem 0;
+      border-radius: 100%;
+      background-size: cover;
+      background-image: url(../assets/Avatar.jpg);
+    }
+  }
+}
+
+.home-section-mobile {
+  section {
+    .pic {
+      background-color: #118ab2;
+      border: 3px #ef476f solid;
+      margin: 0 1rem 0.5rem 0;
+      border-radius: 100%;
+      background-size: cover;
+      background-image: url(../assets/Avatar.jpg);
+    }
+  }
+}

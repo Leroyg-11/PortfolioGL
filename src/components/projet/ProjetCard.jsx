@@ -20,6 +20,7 @@ const ProjetCard = (repos) => {
           <h2 className="card-title">{repos.name}</h2>
           <p className="card-description">{repos.description}</p>
         </div>
+
         <div className="card-content-skill ">
           <ul className="skills">
             {repos.topics.map((topic, index) => {
@@ -31,6 +32,7 @@ const ProjetCard = (repos) => {
             })}
           </ul>
         </div>
+
         <div className="flip-card-back">
           <h1>Lien vers le repo GitHub de {repos.name}</h1>
           <a href={repos.html_url}>

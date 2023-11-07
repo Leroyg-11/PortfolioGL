@@ -1,0 +1,15 @@
+{
+    "name": "nom-de-votre-backend",
+    "version": "1.0.0",
+    "description": "Description de votre backend",
+    "main": "server.js", // Le point d'entrée de votre application Node.js
+    "scripts": {
+      "start": "node server.js" // Script pour démarrer le serveur
+    },
+    "dependencies": {
+      "express": "^4.17.1", // Exemple de dépendance (Express dans ce cas)
+      "nodemailer": "^6.7.2" // Autre exemple de dépendance (Nodemailer dans ce cas)
+      // Ajoutez d'autres dépendances si nécessaire
+    }
+  }
+  
