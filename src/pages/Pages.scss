@@ -13,12 +13,54 @@ main {
     justify-content: center;
   }
 }
-
-form {
+.form-container {
+  // border: 5px solid red;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 1rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
+
+.message-container {
+  border: 5px solid $dark-red;
+  background-color: $dark-blue;
+  display: flex;
+  position: relative;
+  top: 35%;
+  padding: 1rem;
+  flex-direction: row-reverse;
+  .close-message {
+    position: absolute;
+    top: -15%;
+    right: 2%;
+    color: $dark-red;
+    cursor: pointer;
+  }
+}
+.hidden {
+  display: none;
+  transform: translatex(-100%);
+}
+// .message-container {
+//   position: relative;
+//   background-color: green;
+//   /* top: 30%; */
+//   height: 10vh;
+//   width: 40%;
+//   gap: 2rem;
+//   display: flex;
+//   flex-direction: row-reverse;
+//   align-items: center;
+//   .close-message {
+//     position: relative;
+//     bottom: 30%;
+//     right: 2%;
+//   }
+// }
 
 // @import "../index.scss";
 // .home-section {
