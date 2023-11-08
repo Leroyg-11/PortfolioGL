@@ -34,7 +34,7 @@ const ProjetCard = (repos) => {
         </div>
 
         <div className="flip-card-back">
-          <h1>Lien vers le repo GitHub de {repos.name}</h1>
+          <h2>Lien vers le repo GitHub de {repos.name}</h2>
           <a href={repos.html_url}>
             <button className="card-button">Lien GitHub</button>
           </a>
