@@ -1,3 +1,20 @@
+html {
+  #background {
+    background-image: url(../src/assets/bg-stars.avif);
+    background-repeat: repeat; /* Répéter l'image à l'infini */
+    background-attachment: fixed; /* Fixer l'image en place pendant le défilement */
+
+    z-index: -1;
+    animation: moving-stars 100s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+    min-width: 200%;
+    max-height: fit-content;
+  }
+  overflow-x: hidden;
+}
 :root {
   font-family: monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,11 +27,21 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  // overflow: hidden;
 }
+
 body {
+  position: relative;
   padding: 0;
   margin: 0;
+}
+
+@keyframes moving-stars {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
 }
 
 // dark-mode
