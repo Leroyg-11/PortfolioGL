@@ -24,7 +24,7 @@ const NavBar = () => {
   return (
     <nav className={`nav ${windowSize <= 768 ? "nav-mobile" : ""}`}>
       <ul className="nav-name">
-        <Link onClick={toggleMenu} to="/">
+        <Link to="/">
           <li>
             <i className="fa-solid fa-user-tie" />
             <p className="li-name">Leroy</p>
@@ -39,28 +39,28 @@ const NavBar = () => {
           (windowSize <= 768) & showMenu ? "nav-item-mobile hidden" : ""
         }`}
       >
-        <Link onClick={toggleMenu} to="/">
+        <Link className="nav-link-item" to="/">
           <li className="li-item">
-            <i className="fa-solid fa-code"></i>
-            Home
+            <i className="fa-solid fa-code animi"></i>
+            <p className="animli">Home</p>
           </li>
         </Link>
-        <Link onClick={toggleMenu} className="nav-link-item" to="/about">
+        <Link className="nav-link-item" to="/about">
           <li className="li-item">
-            <i className="fa-solid fa-terminal"></i>
-            About
+            <i className="fa-solid fa-terminal animi"></i>
+            <p className="animli">About</p>
           </li>
         </Link>
-        <Link onClick={toggleMenu} className="nav-link-item" to="/projet">
+        <Link className="nav-link-item" to="/projet">
           <li className="li-item">
-            <i className="fa-solid fa-folder-open"></i>
-            Projet
+            <i className="fa-solid fa-folder-open animi"></i>
+            <p className="animli">Projet</p>
           </li>
         </Link>
-        <Link onClick={toggleMenu} className="nav-link-item" to="/contact">
+        <Link className="nav-link-item" to="/contact">
           <li className="li-item">
-            <i className="fa-regular fa-address-card"></i>
-            Contact
+            <i className="fa-regular fa-address-card animi"></i>
+            <p className="animli">Contact</p>
           </li>
         </Link>
       </ul>

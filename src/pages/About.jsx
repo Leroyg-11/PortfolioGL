@@ -5,7 +5,7 @@ import avatar from "../assets/Avatar.jpg";
 const About = () => {
   return (
     <main>
-      <h1>PROJETS</h1>
+      <h1>About</h1>
 
       <section>
         <p>
@@ -29,21 +29,7 @@ const About = () => {
           quis aspernatur id animi? Culpa reiciendis, excepturi fugit quia
           debitis optio consequatur? Non, asperiores nobis. Adipisci nam quam
           labore neque culpa doloremque alias, molestias iure quasi recusandae
-          illo cum quos. Dolores fuga vel rem quis. Est nostrum harum nulla
-          voluptatum quasi fuga veritatis consequuntur minus suscipit odit enim
-          dignissimos inventore impedit, quis quam perspiciatis quibusdam illum
-          nihil magnam! Aut incidunt aliquid doloremque necessitatibus similique
-          quos aspernatur nam repudiandae eligendi, eum ipsa laboriosam
-          voluptate? Laboriosam sit at ex vel necessitatibus beatae alias
-          doloremque asperiores voluptas molestias, iure magni, ipsum veritatis
-          cumque sed doloribus ducimus molestiae et, ipsam rerum? Aperiam,
-          pariatur repudiandae doloribus atque voluptatem delectus aliquam optio
-          sint aliquid iure fugit eveniet laborum soluta doloremque odit rem
-          enim maiores voluptate cumque ab! Dolores dolor velit excepturi
-          repellendus assumenda ipsa ex vitae maxime rerum soluta quis
-          architecto, minima asperiores. Tempore libero saepe quo adipisci,
-          voluptatem, temporibus earum eius sunt ipsa beatae perspiciatis
-          laudantium maxime corporis asperiores dignissimos nam?
+          illo cum quos. Dolores fuga vel rem quis.
         </p>
       </section>
     </main>

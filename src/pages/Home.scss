@@ -1,6 +1,8 @@
 @import "../index.scss";
 @import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
-
+.home-section {
+  animation: homeSlide 1s ease-in-out forwards;
+}
 main {
   max-width: 100%;
   padding: 2rem;
@@ -12,10 +14,6 @@ main {
     font-family: "VCR OSD Mono", monospace;
     margin: 1rem 0;
     color: #ffd166;
-    &:hover {
-      background-image: url(../assets/rainbow-static.webp);
-      opacity: 50%;
-    }
   }
   section {
     display: flex;
@@ -52,5 +50,31 @@ main {
       background-size: cover;
       background-image: url(../assets/Avatar.jpg);
     }
+  }
+}
+
+@keyframes homeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  90% {
+    transform: translateY(+2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+@keyframes popin {
+  0% {
+    transform: scale(0.2);
+  }
+  75% {
+    transform: scale(1.2);
+    animation-timing-function: easeout;
+  }
+  100% {
+    transform: scale(1);
   }
 }

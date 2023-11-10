@@ -25,6 +25,16 @@ nav {
       align-items: center;
       gap: 1rem;
       color: $dark-blue;
+      &:hover {
+        .animli {
+          color: $dark-red;
+          animation: animli 0.5s ease-in-out forwards;
+        }
+        .animi {
+          color: $dark-blue;
+          animation: animi 0.5s ease-in-out forwards;
+        }
+      }
       i {
         color: $dark-red;
       }
@@ -41,28 +51,51 @@ nav {
   align-items: center;
   .hamburger-icon {
     display: inline;
+    color: $dark-red;
   }
   .nav-item {
+    p {
+      display: none;
+    }
     display: flex;
-    flex-direction: column;
     width: 100%;
-    align-items: flex-end;
+    align-items: center;
     height: fit-content;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin-bottom: 1rem;
-    animation: appear 1s ease-in-out;
-
-    li:hover {
-      color: $dark-red;
+    :first-child {
+      :first-child {
+        :first-child {
+          animation: appear 1s ease-in-out forwards running;
+        }
+      }
+    }
+    :nth-child(2) {
       i {
-        color: $dark-blue;
+        animation: appear 1.2s ease-in-out forwards running;
+      }
+    }
+    :nth-child(3) {
+      i {
+        animation: appear 1.4s ease-in-out forwards running;
+      }
+    }
+    :nth-child(4) {
+      i {
+        animation: appear 1.6s ease-in-out forwards running;
+      }
+    }
+
+    :hover {
+      p {
+        animation: testX 0.5s ease-in-out forwards;
+        display: block;
       }
     }
   }
-  .hidden {
-    animation: disappear 1s ease-in-out;
-    animation-fill-mode: forwards;
-  }
+}
+.hidden {
+  animation: disappear 1s ease-in-out forwards running;
 }
 
 @keyframes appear {
@@ -72,7 +105,7 @@ nav {
     transform: translateY(-200px);
   }
   90% {
-    transform: translateY(20px);
+    transform: translateY(5px);
   }
 
   100% {
@@ -89,5 +122,65 @@ nav {
     transform: translateY(-200px);
     opacity: 0;
     display: none; /* Pour cacher l'élément à la fin de l'animation */
+  }
+}
+@keyframes animli {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animi {
+  0% {
+    opacity: 0;
+    gap: 0.5rem;
+    transform: translateY(+10px);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes testX {
+  0% {
+    opacity: 0;
+
+    transform: translatex(+10px);
+  }
+  90% {
+    transform: translatex(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+@keyframes testXx {
+  0% {
+    opacity: 0;
+
+    transform: translatex(-10px);
+  }
+  90% {
+    transform: translatex(+5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0);
   }
 }

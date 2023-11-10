@@ -1,6 +1,7 @@
 @import "../index.scss";
 
 main {
+  animation: pageSlide 1s ease-in-out forwards;
   border: 1px solid $dark-green;
   display: flex;
   flex-direction: column;
@@ -8,7 +9,10 @@ main {
   flex-wrap: wrap;
   margin: 1rem;
   section {
+    animation: sectionSlide 1s ease-in-out forwards;
     display: flex;
+    gap: 0;
+    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,83 +50,31 @@ main {
   display: none;
   transform: translatex(-100%);
 }
-// .message-container {
-//   position: relative;
-//   background-color: green;
-//   /* top: 30%; */
-//   height: 10vh;
-//   width: 40%;
-//   gap: 2rem;
-//   display: flex;
-//   flex-direction: row-reverse;
-//   align-items: center;
-//   .close-message {
-//     position: relative;
-//     bottom: 30%;
-//     right: 2%;
-//   }
-// }
 
-// @import "../index.scss";
-// .home-section {
-//   display: grid;
-//   place-items: center;
-//   min-height: 100%;
-//   border: 1px solid $dark-green;
-//   margin: 2rem;
-// }
+@keyframes pageSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  90% {
+    transform: translateX(+2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
-// .container-hidden {
-//   opacity: 0;
-//   transition: all 2s;
-//   filter: blur(5px);
-//   transform: translateX(-100%);
-// }
-// .fade-in {
-//   opacity: 0;
-//   transform: translateY(-10px);
-//   transition: opacity 1s ease, transform 1s ease;
-// }
-
-// .fade-in.show {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
-
-// .show {
-//   opacity: 1;
-//   filter: blur(0);
-//   transform: translateX(0);
-// }
-
-// section {
-//   min-height: calc(100vh - 12rem);
-//   color: $dark-yellow;
-//   border: 1px solid $dark-red;
-//   margin: 2rem 2rem 2.2rem 2rem;
-//   background-color: #141313;
-//   padding: 1rem;
-//   overflow: hidden;
-//   display: flex;
-//   // width: 80vw;
-//   gap: 5rem;
-//   > h1 {
-//     font-size: 3rem;
-//     color: $dark-yellow;
-//     -webkit-text-stroke: 1px;
-//     -webkit-text-stroke-color: $dark-green;
-//   }
-// }
-// .projet-container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
-
-// .avatar-pic {
-//   width: 12rem;
-//   height: 12rem;
-//   object-fit: contain;
-//   border-radius: 100%;
-//   border: 2px solid $dark-green;
-// }
+@keyframes sectionSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(+300%);
+  }
+  90% {
+    transform: translateX(-2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
